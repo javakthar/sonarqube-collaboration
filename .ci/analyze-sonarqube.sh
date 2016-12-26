@@ -1,6 +1,7 @@
 #!/bin/bash
 
-echo "${CIRCLE_PULL_REQUEST}" 
+echo ${CIRCLE_PULL_REQUEST##*/}
+echo ${CIRCLE_PULL_REQUEST}
 echo "${CI_PULL_REQUEST}"
 echo "${CIRCLE_PR_NUMBER}"
 
