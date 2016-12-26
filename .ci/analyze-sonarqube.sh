@@ -1,7 +1,6 @@
 #!/bin/bash
 
 
-
 echo "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.0.1:sonar"
 echo "  -Dmaven.test.skip=true"
 echo "  -Dclirr=true"
@@ -22,6 +21,6 @@ mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.0.1:sonar \
   -Dsonar.password="${SONARQUBE_PASSWORD}"	\
   -Dsonar.sourceEncoding=UTF-8		\
   -Dsonar.analysis.mode=issues		\
-    -Dsonar.github.oauth="${GITHUB_OAUTH}"	\
+  -Dsonar.github.oauth="${GITHUB_OAUTH}"	\
   -Dsonar.github.repository="${GITHUB_REPOS}"	\
   -B -e -V
