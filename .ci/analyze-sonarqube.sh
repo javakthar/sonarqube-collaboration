@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "${CI_PULL_REQUESTS}"
+echo "${CI_PULL_REQUESTS}" 
 echo "${CI_PULL_REQUEST}"
 echo "${CIRCLE_PR_NUMBER}"
 
